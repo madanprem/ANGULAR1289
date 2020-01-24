@@ -1,7 +1,7 @@
 const express = require('express')
 const path =require('path')
 const app = express()
-const port = process.env.port || 3000 //process.env.port for heroku
+const port = process.env.PORT || 3000 //process.env.port for heroku
 app.use(express.static(__dirname + '/dist/ngproject'));//gets content like jscript an dother from ngproject 
 
 //app.get('/', (req, res) => res.send('Hello World!'))
